@@ -1,0 +1,852 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: 'Raleway';
+    src: url('fonts/Raleway/Raleway-VariableFont_wght.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Fjalla One';
+    src: url('fonts/Fjalla_One/FjallaOne-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body{
+    background-color:#141c1c;
+    font-family: 'Raleway' , sans-serif;
+    color: white;
+}
+
+::selection {
+    background-color: #04dd5b;
+    color: black; 
+}
+
+h1,h3,h5{
+    font-family: 'Fjalla One', sans-serif;
+}
+
+h3{
+    color: #04dd5b;
+    margin-bottom: 15px;
+}
+
+p{
+    font-size: 15px;
+    margin-bottom: 5px;
+    line-height: 1.5;
+}
+
+.site-logo-img{
+    position: absolute;
+    top: 10px; 
+    left: 4.5rem;
+    z-index: 1;
+}
+
+.menu {
+    position: absolute;         
+    right: 5rem; 
+    line-height: 40px;
+    z-index: 1000;
+}
+
+.site-navigation {
+    padding: 10px;
+}
+
+.site-navigation ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: right;
+    margin-top: 10px;
+}
+
+.site-navigation li {
+    display: inline-block;
+    margin-left: 7px;
+}
+
+.site-navigation a {
+    font-size: 17px;
+    font-weight: bold;
+    text-decoration: none;
+    transition: color 0.3s ease;
+    padding: 5px 10px;
+    color: white;
+}
+
+.site-navigation a:hover {
+    color:  #04dd5b 
+}
+
+#menu-home{
+    color:  #04dd5b;
+}
+
+#container-div-begin {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+}
+
+#background-div-hades {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('media/index/background-hades.webp');
+    background-size: cover;
+    background-position: center center;
+    filter: grayscale(100%);
+    z-index: 1;
+}
+
+#content-div-begin {
+    position: relative;
+    margin-left: 70px; 
+    top: 65%;
+    transform: translateY(-50%);
+    z-index: 1000;
+}
+
+#content-div-begin h3 {
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+
+#content-div-begin h1 {
+    margin-bottom: 5rem; 
+    font-size: 90px;
+}
+
+.play-button {
+    display: inline-block;
+    padding: 10px 30px; 
+    border: 2px solid  #04dd5b;
+    margin-bottom: 4.5rem; 
+    color:  #04dd5b ;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.play-button:hover {
+    background-color:  #04dd5b;
+    color: #ffffff;
+}
+
+.redes-sociales {
+    display: flex; 
+}
+
+.red-social {
+    background-color:  #04dd5b;
+    width: 30px;
+    height: 30px;
+    justify-content: center; 
+    align-items: center;
+    border-radius: 50%; 
+    margin: 0 7.5px; 
+}
+
+.red-social img {
+    margin-top: 6px;
+    margin-left: 6px;
+    width: 60%;
+    height: 60%;
+    object-fit: cover; 
+}
+
+.game-content-center{
+    text-align: center;
+    width: 100%; 
+    margin: 0;
+    padding: 50px 0;
+}
+
+.game-content-center,.game-img-content,.main-zones h3{
+    margin-bottom: 10px;
+    font-size: 40px;
+}
+
+#game-presentation,#next-release {
+    background-color: black;  
+}
+
+#game-presentation{
+    width: 90%;
+    margin: 0 60px; 
+}
+
+#game-presentation p{
+    padding: 0 10%; 
+}
+
+#game-awards{
+    max-width: 96.5%;
+}
+
+#game-awards img {
+    max-width: 50%;
+    margin-top: 30px; 
+    filter: grayscale(100%);
+}
+
+.game-img-content {
+    margin: 0 10rem;
+    padding: 20px; 
+}
+
+.game-img-content .img-content {
+    display: flex;
+    flex-direction: row;
+    align-items: center; 
+}
+
+
+#Img-arg{
+    background: linear-gradient(black, #8a110f, #6c090a);
+    margin-right: 8.5rem;
+    filter: grayscale(100%);
+}
+
+#Img-supergiant{
+    margin-left: 8.5rem;
+    filter: grayscale(100%);
+}
+
+#Img-arg:hover, #Img-supergiant:hover {
+    filter: brightness(100%);
+}
+
+.main-zones {
+    text-align: center; 
+    margin-top: 50px; 
+}
+
+.zone-images {
+    margin-top: 5rem;
+    background-color: black;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    font-size: 0;
+}
+
+.img-row {
+    display: flex;
+}
+
+.image-container {
+    position: relative;
+    width: 50%;
+}
+
+.image-container h3 {
+    position: absolute;
+    font-size: 60px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1; 
+}
+
+.img-row img {
+    width: 100%;
+    height: auto; 
+    filter: grayscale(100%); 
+    transition: filter 0.5s ease; 
+}
+
+.img-row img:hover {
+    filter: grayscale(100%) brightness(80%);
+}
+
+#next-release{
+    margin-bottom: 0;
+    padding-left: 0;
+}
+
+.img-with-div {
+    display: flex;
+    position: relative;
+    margin-top: 0;
+    width: 100%;
+}   
+
+.img-with-div .image-container {
+    position: relative;
+}
+
+.img-with-div img {
+    display: block;
+    width: 95%;
+    height: auto;
+}
+
+.content-img-div {
+    position: absolute;
+    top: 25%;
+    left: 57.5%;
+    transform: translateX(-50%);
+    background-color: #04dd5b;
+    padding: 20px 40px;
+    max-width: 50%; 
+    z-index: 1; 
+}
+
+#reserva{
+    display: inline-block;
+    padding: 10px 30px; 
+    background-color: black; 
+    color:  #04dd5b;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+#reserva:hover {
+    background-color:  white;
+    color: black;
+}
+
+.content-img-div h3 {
+    margin-top: 0; 
+    color: black;
+    font-size: 40px;
+}
+
+.content-img-div p {
+    margin-bottom: 15px; 
+    color: black;
+}
+
+#where-to-buy{
+    margin-top: 15rem;
+}
+
+#plataformas{
+    margin-bottom: 45px;
+}
+
+#where-to-buy #container-buy {
+    margin: 0 5%;
+    text-align: center;
+}
+
+#where-to-buy .content-buy {
+    display: flex;
+    background-color: black;
+    padding: 20px 15px; 
+    margin-bottom: 30px;
+    align-items: center;
+}
+
+#where-to-buy .content-buy h3 {
+    font-family: 'Fjalla One', sans-serif;
+    margin-left: 70px;
+}
+
+#where-to-buy .content-buy p {
+    font-family: 'Fjalla One', sans-serif;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+#where-to-buy .buy-button, #contact-email .buy-button{
+    display: inline-block;
+    padding: 8px 30px; 
+    border: 2px solid  #04dd5b;
+    margin-bottom: 0;
+    font-size: 18px;
+    color:  #04dd5b ;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+    margin-right: 100px;
+}
+
+#where-to-buy .buy-button:hover{
+    background-color: #04dd5b;
+}
+
+#contact-email,#contact-email .content-img-div{
+    background-color: transparent;
+}
+
+#contact-email .content-img-div{
+    top: 15%;
+    left: 60%;
+    width: 45%;   
+}
+
+#contact-email .content-img-div h3{
+    color: #04dd5b;
+}
+
+#contact-email .content-img-div p{
+    color: white;
+}
+
+#contact-email .content-img-div input{
+    width: 55%;
+    padding: 10px; 
+    font-size: 17px;
+    margin-right: 1%;
+}
+
+#contact-email .content-img-div a{
+    color: white;
+    text-decoration: none;
+}
+
+#contact-email .buy-button{
+    background-color: transparent; 
+}
+
+#contact-email .buy-button:hover{
+    background-color: #04dd5b;
+    color: black;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    gap: 15%;
+    padding: 0 7%;
+    margin-top: 5%;
+}
+
+.footer-section {
+    flex: 1;
+}    
+
+.footer-section img{
+    width: 100%;
+    height: fit-content;
+}
+
+.footer-section h5{
+    margin-bottom: 15%;
+    font-size: 21px;
+    color: #04dd5b;
+}
+
+.footer-section p{
+    max-width: 80%;
+}
+
+.footer-section-2,.footer-section-3,.footer-section-4{
+    margin-top: 2%;
+}
+
+.footer-section ul {
+    list-style-type: none;
+}
+
+.footer-section a{
+    text-decoration: none;
+    color: white;
+}
+
+
+.footer-navigation {
+    display: flex;
+    flex-direction: column;
+}
+
+#menu-footer{         
+    right: 30%;
+} 
+
+#menu-footer .site-navigation a {
+    font-size: 15px;
+    transition: color 0.3s ease;
+    padding: 5px 10px;
+    color: #04dd5b;
+}
+
+#menu-footer .site-navigation a:hover {
+    color:  white;
+}
+
+
+#redes-footer{
+    display: flex;
+    justify-content: center;
+    margin-top: 4%;
+}
+
+#redes-footer .red-social {
+    background-color:  transparent;
+    margin: 0 10px; 
+}
+
+#redes-footer .red-social img {
+    width: 90%;
+    height: 90%;    
+}
+
+footer {
+    padding: 4% 5%; 
+    text-align: center; 
+    border-top: 2px solid #04dd5b; 
+    margin-top: 3%;
+}
+
+
+@media screen and (max-width: 500px) {
+
+    #container-div-begin{
+        width: 87%;
+    }
+
+    #background-div-hades {
+        background-position: 52.5% center;
+        background-size: cover;
+        width: 112%;
+    }
+
+    h3{
+        font-size: 25px;
+        margin-bottom: 3%;
+    }
+
+    p{
+        font-size: 13px;
+        line-height: 1.5;
+        margin-bottom: 3%;
+    }
+
+    .site-logo-img{
+        position: absolute;
+        top: 3%; 
+        left: 5%;
+    }
+    
+    .site-logo-img a img {
+        width: 40%; 
+        height: auto; 
+    }
+    
+    .menu {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 60%;
+        z-index: 1000;
+    }
+
+    .site-navigation {
+        width: fit-content;
+        position: absolute;
+        left: 140%;
+    }
+
+    .site-navigation div {
+        width: fit-content;
+    }
+
+    .site-navigation ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        width: fit-content;
+        text-align: center;
+    }
+
+    .site-navigation li {
+        display: block;
+        margin: 0;
+        justify-content: center;
+    }
+
+    .site-navigation a {
+        font-size: 8px;
+        font-weight: bold;
+        text-decoration: none;
+        transition: color 0.3s ease;
+        color: white;     
+    }
+
+    #content-div-begin {
+        top: 52.5%;
+        margin-left: 5%; 
+        width: fit-content;
+    }
+
+    #content-div-begin h3 {
+        font-size: 18px;
+    }
+
+    #content-div-begin h1 {
+        font-size: 65px;
+        margin-bottom: 25%;
+    }
+
+    .play-button {
+        font-size: 16px;
+        padding: 2% 10%; 
+    }
+
+    .redes-sociales {
+        margin-left: -2.5%;
+    }
+
+    .red-social {
+        margin: 2.25%;
+    }
+
+    .red-social img {
+        width: 70%;
+        height: 70%;
+        margin-left: 15%;
+        margin-top: 15%;
+    }
+
+    .game-content-center {
+        padding: 7.5% 7.5%;
+        width: 50%;
+        transform: translateX(0%);
+    }
+
+    #game-presentation{ 
+        position: relative;
+        width: 65%;
+        margin-top: -10%; 
+        margin-bottom: 10%;
+        margin-left: 10%;
+        margin-right: 0;
+        transform: translateX(-3.5%);
+        z-index: 1;
+    }
+
+    #game-awards{
+        width: 75%;
+        padding: 0;
+        margin-right: 0; 
+        margin-left: 10%;
+    }
+
+    #game-awards img {
+        max-width: none;
+        width: 100%;
+    }
+
+    .game-img-content {
+        margin: 0;
+        width: 72.5%;
+    }
+
+    .game-img-content .img-content {
+        flex-direction: column;
+    }
+
+    .img-content img {
+        width: 110%;
+        margin: 5% 0%;
+    }
+
+    #Img-arg{
+        margin-right: 0%;
+        margin-left: 20%;
+    }
+    
+    #Img-supergiant{
+        margin-left: 20%;
+    }
+
+    .game-img-content .text-img-content {
+        flex-basis: 100%;
+        max-width: 100%; 
+        margin-left: 5%;
+    }
+
+    .main-zones {
+        margin-top: 8.5%;
+        max-width: 97%; 
+    }
+
+    .main-zones p{
+        max-width: 90%; 
+        margin-left: 5%;
+    }
+
+    .zone-images {
+        margin-top: 7.5%;
+        flex-direction: column;
+    }
+
+    .img-row {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .image-container{
+        width: 100%;
+    }
+
+    .image-container h3 {
+        font-size: 25px;
+    }
+
+    #next-release{
+        margin: 0%;
+        width: 93%;
+        padding: 10% 2%;
+        padding-bottom: 2%;
+    }
+
+    .img-with-div {
+        flex-direction: column;
+        width: 97%;
+    }
+
+    .img-with-div img {
+        display: flex;
+        width: 100%;
+    }
+
+    .content-img-div {
+        top: 100%;
+        left: 0%;
+        transform: none;
+        padding: 7.5%;
+        max-width: 85%;
+    }
+
+    .content-img-div p {
+        font-size: 14px;
+    }
+
+    #where-to-buy {
+        margin-top: 130%;
+        margin-left: 0;
+        margin-right: 0;
+        padding-left: 4%;
+        width: 80%;
+    }
+
+    #where-to-buy h3,#where-to-buy p{
+        margin-left: 10%;
+    }
+
+    #where-to-buy #container-buy {
+        width: 100%; 
+    }
+
+    .content-buy {
+        flex-direction: column;
+        margin: 5% auto;
+        align-items: flex-start;
+    }
+
+    .content-buy h3 {
+        font-size: 24px;
+        padding-right: 20%;
+    }
+    
+    .content-buy p {
+        font-size: 16px;
+        font-weight: bold;
+    }
+    
+    .buy-button {
+        font-size: 14px;
+        padding: 0 5%;
+        margin: 0 100px;
+    }
+    
+    #contact-email .content-img-div{
+        top: 100%;
+        left: 3%;
+        padding: 5%;
+        width: 90%;
+    }
+
+    #contact-email img{
+        width: 102%;
+    }
+
+    #contact-email .content-img-div p {
+        font-size: 14px;
+    }
+
+    #contact-email .content-img-div input{
+        width: 90%;
+        margin-bottom: 5%;
+    }
+
+    #contact-email .buy-button{
+        width: 97.5%;
+        margin-left: 0%; 
+    }
+
+    .footer-content {
+        flex-direction: column;
+        margin-top: 110%;
+        gap: 5%;
+        align-items: center;
+        justify-content: center;
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .footer-section{
+        text-align: center;
+    }
+
+    .footer-section img{
+        width: 70%;
+    }
+
+    .footer-section h5{
+        margin-bottom: 30%;
+        font-size: 15px;
+    }
+    .footer-section p,.footer-section a{
+        font-size: 12px;
+    }
+
+    .footer-section p{
+        max-width: 95%;   
+    }
+    
+    #redes-footer{
+        margin-bottom: 15%;
+    }
+
+    footer {
+        padding: 10% 0%; 
+        margin-top: 0%;
+    } 
+
+    .footer-navigation {
+        display: flex;
+        max-width: 90%;
+    }
+
+    #menu-footer {
+        position: relative;
+        text-align: center; 
+        margin-bottom: 10px; 
+    }
+
+    #menu-footer .site-navigation {
+        position: relative;
+        justify-content: center;
+        padding: 0; 
+        left: 60%;
+    }   
+
+    #menu-footer .site-navigation ul {
+        display: inline-block; 
+        margin: 0 auto; 
+    }
+}

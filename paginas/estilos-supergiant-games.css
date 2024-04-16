@@ -1,0 +1,692 @@
+
+/* Configuracion Inicial */
+
+*{
+    margin: 0;
+}
+
+@font-face {
+    font-family: 'Raleway';
+    src: url('../fonts/Raleway/Raleway-VariableFont_wght.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Fjalla One';
+    src: url('../fonts/Fjalla_One/FjallaOne-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body{
+    background-color:#141c1c;
+    font-family: 'Raleway' , sans-serif;
+}
+
+::selection {
+    background-color: #04dd5b;
+    color: black; 
+}
+
+
+h1,h3,h5{
+    font-family: 'Fjalla One', sans-serif;
+    color: #04dd5b;
+    margin-bottom: 5%;
+}
+
+p,a{
+    font-size: 15px;
+    margin-bottom: 2%;
+    text-decoration: none;
+    color: white;
+}
+
+p{
+    line-height: 1.5;
+}
+
+/* Configuracion de header */
+
+.site-logo-img{
+    position: absolute;
+    top: 1.5%; 
+    left: 4%;
+    z-index: 10;
+}
+
+.menu {
+    position: relative;         
+    line-height: 40px;
+    z-index: 10;
+}
+
+.site-navigation {
+    padding: 1% 0;
+    padding-right: 5.75%;
+}
+
+.site-navigation ul {
+    list-style-type: none;
+    text-align: right;
+}
+
+.site-navigation li {
+    display: inline-block;
+    margin-left: 1%;
+}
+
+.site-navigation a {
+    font-size: 17px;
+    font-weight: bold;
+    text-decoration: none;
+    transition: color 0.3s ease;
+    padding: 0 0.25vw;
+    color: white;
+}
+
+.site-navigation a:hover {
+    color:  #04dd5b;
+}
+
+#menu-color{
+    color:  #04dd5b;
+}
+
+.header-hades {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+}
+
+#background-div-hades {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('../media/background-hades-2.webp');
+    background-size: cover;
+    background-position: center center;
+    z-index: 1;
+}
+
+#content-div-begin {
+    position: absolute;
+    top: 18.5%;
+    left: 47.5%; 
+    transform: translateX(-50%); 
+    text-align: center;
+    z-index: 10;
+}
+
+#content-div-begin h1 {
+    margin-bottom: 20%; 
+    font-size: 70px;
+}
+
+#content-div-begin p {
+    margin-bottom: 25%; 
+}
+
+/* Configuracion contenido */
+
+.game-img-content {
+    margin-left: 5%;
+    margin-right: 3.5%;
+    padding: 10% 0;
+    padding-bottom: 2%; 
+}
+
+.game-img-content .img-content {
+    display: flex;
+    align-items: center; 
+}
+
+.game-img-content img{
+    margin-right: 7.5%;
+    width: 50%;
+}
+
+.game-img-content h3{
+    font-size: 40px;
+    margin-bottom: 2%;
+}
+
+#Logo-sup{
+    margin-top: 4%;
+    margin-right: 0;
+    width: 30%;
+}
+
+/* Configuracion imagen cortada */
+
+.game-content-center{
+    text-align: center;
+    width: 100%; 
+    margin: 0;
+    margin-bottom: 25%;
+}
+
+.game-content-center h1 {
+    font-size: 60px;
+}
+
+.center-img-cut h1, .center-img-cut a{
+    position: relative;
+    z-index: 10;
+}
+
+.center-img-cut h1{
+    margin-top: -30%;
+    margin-bottom: 2%;
+}
+
+.center-img-cut  img {
+    position: relative;
+    filter: grayscale(100%);
+    width: 100%;
+    clip-path: polygon(0% 15%, 100% 0%, 100% 0%, 100% 80%, 0% 100%, 0% 100%);
+    object-fit: cover; 
+    z-index: -1; 
+}
+
+/* Configuracion staff y premios */
+
+.team-studio, .awards-studio{
+    padding-top: 5%; 
+}
+
+.team-studio h3,.awards-studio h3{
+    margin: 0; 
+}
+
+.team-studio .img-content, .awards-studio .img-content{
+    align-items: baseline;
+}
+
+.team-studio .text-img-content,.awards-studio .text-img-content{
+    margin: 0 5%; 
+}
+
+.team-studio .text-img-content{
+    width: 50%;
+}
+
+.team-studio .staff{
+    align-items: center;
+    margin-bottom: 3%;
+}
+
+.team-studio .staff div{
+    display: block;
+}
+
+.team-studio .staff h5{
+    font-size: 24px;
+}
+
+.staff img{
+    width: 33%;
+} 
+
+.staff div{
+    width: 57%;
+} 
+
+.staff span{
+    width: 10%;
+}
+
+.staff img{
+    margin-right: 4%;
+} 
+
+.staff-list {
+    list-style: none; 
+    padding-left: 0; 
+}
+
+.staff-list li {
+    margin-bottom: 10px; 
+    color: white; 
+    font-size: 15px;
+}
+
+.staff-list li i {
+    margin-right: 10px; 
+}
+
+.fa-user:before {
+    content: "\f007"; 
+    font-family: "Font Awesome 5 Free"; 
+    margin-right: 10px; 
+    color: #04dd5b; 
+}
+
+.awards-studio img{
+    width: 80%;
+    display: block;
+    margin: 0 auto; 
+    margin-top: 7.5%;
+}
+
+#img-logo{
+    display: block;
+    margin: auto 0; 
+    width: 20%;
+}
+
+/* Configuracion demas juegos */
+
+.div-content{
+    padding-top: 3.5%;
+    margin-bottom: 10%;
+}
+
+.div-content #container-games {
+    margin: 0 5%;
+    text-align: center;
+    width: 90%;
+}
+
+.div-content .content {
+    display: flex;
+    background-color: black;
+    padding: 2% 5%; 
+    margin-bottom: 5%;
+    gap: 5%;
+    align-items: center;
+}
+
+.div-content h3{
+    margin-bottom: 0;
+    font-size: 40px;
+}
+
+.div-content .content h5,.div-content .content a {
+    margin: 0;
+}
+
+.div-content .content h5{
+    font-size: 36px;
+}
+
+.div-content .content p{
+    font-size: 24px;
+}
+
+.div-content .content p{
+    margin-right: 0;
+    margin-left: auto;
+    margin-bottom: 0;
+    font-weight: bold;
+}
+
+#more-info-boons h1, #more-info-boons a{
+    position: relative;
+    z-index: 10;
+}
+
+.border-button  {
+    display: inline-block;
+    padding: 1% 3%; 
+    border: 2px solid  #04dd5b; 
+    color:  #04dd5b;
+    margin-bottom: 10%;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+    z-index: 10;
+}
+
+.border-button:hover {
+    background-color:  #04dd5b;
+    color: black;
+}
+
+/* Configuracion de footer*/
+
+.redes-sociales {
+    display: flex; 
+}
+
+.red-social {
+    width: 100%;
+    height: 100%;
+    margin: 0 7.5px;  
+}
+
+.red-social img {
+    margin-top: 15%;
+    margin-left: 15%;
+    width: 80%;
+    height: 80%;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    gap: 15%;
+    padding: 0 5%;
+}
+
+.footer-section {
+    flex: 1;
+} 
+
+.footer-section img{
+    width: 100%;
+}
+
+.footer-section h5{
+    margin-bottom: 15%;
+    font-size: 21px;
+    padding-right: 10%;
+}
+
+.footer-section-2,.footer-section-3,.footer-section-4{
+    margin-top: 2%;
+    text-align: left;
+}
+
+.footer-section ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.footer-navigation {
+    margin-top: 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#menu-footer .site-navigation{
+    width: 120%;
+    padding: 0;
+}
+
+#menu-footer .site-navigation ul {
+    padding-left: 0;
+    text-align: left;
+}
+
+#menu-footer .site-navigation a {
+    color: #04dd5b;
+    transition: color 0.3s ease;
+}
+
+#menu-footer .site-navigation a:hover {
+    color: white;
+}
+
+.footer-copyright {
+    padding: 4% 5%; 
+    text-align: center; 
+    border-top: 2px solid #04dd5b; 
+    margin-top: 3%;
+}
+
+@media screen and (max-width: 500px) {
+
+    /* Configuracion del header*/
+
+    #background-div-hades {
+        background-position: 90% center;
+        background-size: cover;
+        width: 100%;
+    }
+
+    h3{
+        font-size: 25px;
+        margin-bottom: 3%;
+    }
+
+    p{
+        font-size: 13px;
+        line-height: 1.5;
+        margin-bottom: 3%;
+    }
+
+    .site-logo-img{
+        position: absolute;
+        top: 1.5%; 
+        left: 3%;
+    }
+    
+    .site-logo-img a img {
+        width: 40%; 
+        height: auto; 
+    }
+    
+    .menu {
+        position: relative;
+        top: 0;
+        left: -15%;
+        width: 60%;
+    }
+
+    .site-navigation {
+        width: fit-content;
+        position: relative;
+        left: 140%;
+        padding-right: 0;
+    }
+
+    .site-navigation ul {
+        text-align: center;
+    }
+
+    .site-navigation li {
+        display: block;
+        margin: 0;
+    }
+
+    .site-navigation a {
+        font-size: 8px;
+        font-weight: bold;
+        color: white;     
+    }
+
+    #content-div-begin {
+        top: 19%;
+        margin-left: 0%; 
+        width: fit-content;
+    }
+
+    #content-div-begin h3 {
+        font-size: 18px;
+    }
+
+    #content-div-begin h1 {
+        font-size: 65px;
+        margin-bottom: 10%;
+    }
+
+    .game-content-center img {
+        margin: 5% 0; 
+    } 
+
+    .center-img-cut h1{
+        margin-top: -40%;
+        font-size: 25px;
+        margin-bottom: 40%;
+    }
+
+    .center-img-cut  img {
+        padding: 0;
+        max-width: 100%;
+    }
+
+    /* Configuracion de supergiant games */
+
+    .game-img-content {
+        margin: 0 auto;
+        width: 85%;
+    }
+
+    .game-img-content .img-content {
+        flex-direction: column;
+    }
+
+    .img-content img {
+        width: 100%;
+        margin: 5% 0%;
+    }
+
+    .game-img-content .text-img-content {
+        margin-left: 0%;
+        width: 100%;
+    }
+
+    .game-img-content .text-img-content h3 {
+        font-size: 36px;
+    }
+
+    .game-img-content .text-img-content p {
+        font-size: 14px;
+    }
+
+    /* Configuracion staff y premios */
+
+
+    .img-content .staff img {
+        margin-bottom: 0;
+    }
+
+    .img-content .staff h5 {
+        font-size: 22px;
+    }
+
+    #reves{
+        flex-direction: column-reverse;
+    }
+
+    #img-logo{
+        display: block;
+        margin: 10% auto; 
+        width: 100%;
+    }
+    
+    .staff-list{
+        margin: 15% 0;
+    }
+
+    /* Configuracion demas juegos */
+
+    .div-content{
+        margin-top: 7.5%;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .div-content p{
+        width: 60%;
+        margin: 0 auto;
+        margin-bottom: 10%;
+    }
+
+    .div-content .content {
+        flex-direction: column;
+        padding: 10% 10%; 
+        margin-bottom: 10%;
+    }
+
+    .div-content .content h5{
+        font-size: 32px;
+    }
+
+    .div-content .content p{
+        width: 100%;
+        margin-left: 0;
+        font-size: 22px;
+    }
+
+    .div-content .content a{
+        margin: 5% 0;
+        padding: 3% 10%;
+    }
+
+
+    .div-content #container {
+        width: 85%;
+    }
+
+
+    /* Configuracion de footer*/
+
+    .footer-content {
+        flex-direction: column;
+        margin-top: 20%;
+        gap: 5%;
+        align-items: center;
+    }
+
+    .footer-section{
+        text-align: center;
+    }
+
+    .footer-section img{
+        width: 70%;
+    }
+
+    .footer-section h5{
+        margin-top: 5%;
+        margin-bottom: 25%;
+        font-size: 18px;
+        padding-right: 0;
+    }
+
+    .footer-section p,.footer-section a{
+        font-size: 14px;
+        margin-bottom: 7.5%;
+    }
+    
+    .footer-section-4 p{
+        margin-left: 0;
+    }
+    
+    .footer-section ul {
+        padding: 0;
+        list-style-type: none;
+    }
+    
+    #redes-footer{
+        margin-bottom: 7.5%;
+    }
+
+    .footer-navigation {
+        margin-top: 0;
+    }
+
+    #menu-footer {
+        text-align: center; 
+        margin-top: 12.5%;
+        margin-bottom: 5%; 
+        width: fit-content;
+        left: 0;
+    }
+
+    #menu-footer .site-navigation {
+        left: 0%;
+        width: 100%;
+    }   
+
+    #menu-footer .site-navigation ul {
+        display: inline-block; 
+        text-align: center;
+    }
+    
+    #menu-footer .site-navigation a {
+        font-size: 14px;
+    }
+
+    #redes-footer{
+        margin-top: 2%;
+    }
+    
+    .footer-copyright {
+        padding: 10% 5%; 
+    }
+}
