@@ -386,11 +386,36 @@ p{
         max-width: 100%;
     }
 
+    .contact-email .content-img-div{
+        top: 100%;
+        left: 50%;
+        padding: 5%;
+        width: 90%;
+    }
+
+    .contact-email img{
+        width: 100%;
+    }
+
+    .contact-email .content-img-div p {
+        font-size: 14px;
+    }
+
+    .contact-email .content-img-div input{
+        width: 90%;
+        margin-bottom: 5%;
+    }
+
+    .contact-email .buy-button{
+        width: 97.5%;
+        margin-left: 0%; 
+    }
+
     /* Configuracion de footer*/
 
     .footer-content {
         flex-direction: column;
-        margin-top: 20%;
+        margin-top: 80%;
         gap: 5%;
         align-items: center;
     }
