@@ -7,8 +7,9 @@
     <link rel="stylesheet" href="estilos.css">
 </head>
 <body>
-    <div id="container-div-begin">
-        <div id="background-div-hades"></div>
+    <!-- seccion header -->
+    <header class="header-hades">
+        <!-- seccion logo y menu -->
         <span class="site-logo-img">
             <a href="index.html">
                 <img width="200" height="88" src="media/logo-hades.webp" alt="Logo del videojuego Hades">
@@ -18,7 +19,7 @@
             <nav class="site-navigation">
                 <div>
                     <ul>
-                        <li><a id="menu-home" href="index.html">Inicio</a></li>
+                        <li><a id="menu-color" href="index.html">Inicio</a></li>
                         <li><a href="paginas/supergiant-games.html">Supergiant Games</a></li>
                         <li><a href="paginas/contenido.html">Contenido</a></li>
                         <li><a href="paginas/bendiciones.html">Bendiciones</a></li>
@@ -27,11 +28,12 @@
                 </div>
             </nav>
         </div>
+        <!-- div img y inicio -->
         <div id="content-div-begin">
             <h3>Roguelike de Acción - Hack and Slash</h3>
             <h1>Hades (2020)</h1>
             <a href="https://store.steampowered.com/app/1145360/Hades/" class="play-button" target="_blank">¡JUEGALO YA!</a>
-            <div class="redes-sociales">
+            <div class="redes-sociales" id="redes-home">
                 <div class="red-social">
                     <a href="https://www.facebook.com/supergiantgames" target="_blank" >
                         <img src="media/redes/facebook.webp" alt="Facebook">
@@ -54,7 +56,8 @@
                 </div> 
             </div>
         </div>
-    </div>
+        <div id="background-div-hades"></div>
+    </header>
     <div class="game-content-center" id="game-presentation">
         <h3>¿Que es Hades?</h3>
         <p>Hades es un juego roguelike de Supergiant Games, creadores de Bastion, Transistor y Pyre. 
@@ -128,7 +131,7 @@
         <h3>Proximos lanzamientos</h3>
         <p>Estamos encantados de presentar Hades II, el quinto juego del estudio y la primera secuela</p>
     </div>
-    <div class="img-with-div">
+    <div class="img-with-div hades-II">
         <div class="image-container">
             <img src="media/index/Hades II.jpg" alt="Hades II">
         </div>
@@ -151,131 +154,136 @@
             <div class="content-buy">
                 <h3>Playstation</h3>
                 <p>13 de Agosto de 2021</p>
-                <a href="https://store.playstation.com/en-us/product/UP2125-PPSA03355_00-3466019145463410" target="_blank" class="buy-button">Cómpralo Ya!</a>
+                <a href="https://store.playstation.com/en-us/product/UP2125-PPSA03355_00-3466019145463410" target="_blank" class="border-button">Cómpralo Ya!</a>
             </div>
             <div class="content-buy">
                 <h3>Xbox</h3>
                 <p>13 de Agosto de 2021</p>
-                <a href="https://www.microsoft.com/en-us/p/hades/9P8DL6W0JBB8" target="_blank" class="buy-button">Cómpralo Ya!</a>
+                <a href="https://www.microsoft.com/en-us/p/hades/9P8DL6W0JBB8" target="_blank" class="border-button">Cómpralo Ya!</a>
             </div>
             <div class="content-buy">
                 <h3>Nintendo Switch</h3>
                 <p>17 de septiembre de 2020.</p>
-                <a href="https://www.nintendo.com/games/detail/hades-switch/" target="_blank" class="buy-button">Cómpralo Ya!</a>
+                <a href="https://www.nintendo.com/games/detail/hades-switch/" target="_blank" class="border-button">Cómpralo Ya!</a>
             </div>
             <div class="content-buy">
                 <h3>PC</h3>
                 <p> 17 de septiembre de 2020.</p>
-                <a href="https://store.steampowered.com/app/1145360/Hades/" target="_blank" class="buy-button">Cómpralo Ya!</a>
+                <a href="https://store.steampowered.com/app/1145360/Hades/" target="_blank" class="border-button">Cómpralo Ya!</a>
             </div>
             <div class="content-buy">
                 <h3>Apple</h3>
                 <p>15 de Marzo de 2024.</p>
-                <a href="https://apps.apple.com/app/hades-netflix/id6450063142/" target="_blank" class="buy-button">Cómpralo Ya!</a>
+                <a href="https://apps.apple.com/app/hades-netflix/id6450063142/" target="_blank" class="border-button">Cómpralo Ya!</a>
             </div>
         </div>
     </div>
-
-     <div class="img-with-div" id="contact-email">
+    <!-- seccion email--> 
+    <div class="img-with-div contact-email">
         <div class="image-container">
-            <img src="media/index/email-hades.webp" alt="Email Hades">
+            <img src="media/email-hades.gif" alt="Email Hades">
         </div>
         <div class="content-img-div">
-            <h3>¿Tienes una pregunta o comentario para nosotros en Supergiant Games?</h3>
+            <h3>¿Quieres contactarte con Supergiant Games?</h3>
             <p>Complete con su respectivo email para contactar a nuestro equipo. Para preguntas y comentarios rápidos, 
             también puede comunicarse con <a href="https://twitter.com/SupergiantGames">@SupergiantGames</a> en Twitter.</p>
             <form action="https://www.supergiantgames.com/contact/" method="get" target="_blank">
                 <input type="email" id="email" name="email" placeholder="Ingresa tu email">
-                <button type="submit" class="buy-button">ENVIAR</button>
+                <buttons  class="border-button">ENVIAR</button>
             </form>
         </div>
     </div>
-    <div class="footer-content">
-        <div class="footer-section footer-section-1">
-                <a href="index.html">
-                    <img src="media/logo-hades.webp" alt="Logo del videojuego Hades">
-                </a>
-            <div>
-                <p>Hades es un juego de rol de acción roguelike de 2020 desarrollado y publicado por Supergiant Games.</p>
-            </div>
-        </div>
-        <!-- seccion menu supergiant games -->
-        <div class="footer-section footer-section-2">
-            <h5>Supergiant Games</h5>
-            <section>
-                <nav>
-                    <ul id="menu-supergiant-games">
-                        <li><a href="paginas/supergiant-games.html#quienes-somos">Quienes somos</a></li>
-                        <li><a href="paginas/supergiant-games.html#exp-profesional">Experiencia profesional</a></li>
-                        <li><a href="paginas/supergiant-games.html#premios">Premios</a></li>
-                        <li><a href="paginas/supergiant-games.html#demas-juegos">Otros juegos</a></li>
-                    </ul>
-                </nav>
-            </section>
-        </div>
-        <!-- seccion contenido -->
-        <div class="footer-section footer-section-3">
-            <h5>Contenido</h5>
-            <section>
-                <nav>
-                    <ul id="menu-contenido">
-                        <li><a href="paginas/contenido.html#historia">Historia</a></li>
-                        <li><a href="paginas/contenido.html#personajes">Personajes</a></li>
-                        <li><a href="paginas/contenido.html#armas">Armas</a></li>
-                        <li><a href="paginas/contenido.html#mas-contenido">Más contenido</a></li>
-                    </ul>
-                </nav>
-            </section>
-        </div>
-        <!-- seccion contacto-->
-        <div class="footer-section footer-section-4">
-            <section>
-                <h5>Contacto</h5>
-                <p>521 Gough Street, <br>San Francisco,<br>California 94102 <br> (918) 258-5765</p>
-            </section>
-        </div>
-    </div>
-
-    <div class="footer-navigation">
-        <div class="menu" id="menu-footer">
-            <nav class="site-navigation">
-                <div>
-                    <ul>
-                        <li><a id="menu-home" href="index.html">Inicio</a></li>
-                        <li><a href="paginas/supergiant-games.html">Supergiant Games</a></li>
-                        <li><a href="paginas/contenido.html">Contenido</a></li>
-                        <li><a href="paginas/bendiciones.html">Bendiciones</a></li>
-                        <li><a href="paginas/contacto.html">Contacto</a></li>   
-                    </ul>
-                </div>
-            </nav>
-        </div>
-        <div class="redes-sociales" id="redes-footer">
-            <div class="red-social">
-                <a href="https://www.facebook.com/supergiantgames" target="_blank" >
-                    <img src="media/redes/facebook.webp" alt="Facebook">
-                </a>
-            </div>
-            <div class="red-social">
-                <a href="https://twitter.com/SupergiantGames" target="_blank" >
-                    <img src="media/redes/twitter.webp" alt="Twitter">
-                </a>
-            </div>
-            <div class="red-social">
-                <a href="https://www.instagram.com/supergiantgames/" target="_blank" >
-                    <img src="media/redes/instagram.webp" alt="Instagram">
-                </a>
-            </div>
-            <div class="red-social">
-                <a href="https://www.youtube.com/channel/UCmyMcU6N5_3XpqSkTx9CnSw" target="_blank" >
-                    <img src="media/redes/youtube.webp" alt="YouTube">
-                </a>
-            </div>       
-        </div>
-    </div>
+    <!-- seccion footer -->
     <footer>
-        <p>Copyright &copy; 2024</p>
-        <p>Juan Pablo Montoya Jimenez - Tecnologías Web</p>
+    <!-- div contenido footer -->
+        <div class="footer-content">
+            <!-- seccion hades -->
+            <div class="footer-section footer-section-1">
+                    <a href="index.html">
+                        <img src="media/logo-hades.webp" alt="Logo del videojuego Hades">
+                    </a>
+                <div>
+                    <p>Hades es un juego de rol de acción roguelike de 2020 desarrollado y publicado por Supergiant Games.</p>
+                </div>
+            </div>
+            <!-- seccion menu supergiant games -->
+            <div class="footer-section footer-section-2">
+                <h5>Supergiant Games</h5>
+                <section>
+                    <nav>
+                        <ul id="menu-supergiant-games">
+                            <li><a href="supergiant-games.html#quienes-somos">Quienes somos</a></li>
+                            <li><a href="supergiant-games.html#exp-profesional">Experiencia profesional</a></li>
+                            <li><a href="supergiant-games.html#premios">Premios</a></li>
+                            <li><a href="supergiant-games.html#demas-juegos">Otros juegos</a></li>
+                        </ul>
+                    </nav>
+                </section>
+            </div>
+            <!-- seccion contenido -->
+            <div class="footer-section footer-section-3">
+                <h5>Contenido</h5>
+                <section>
+                    <nav>
+                        <ul id="menu-contenido">
+                            <li><a href="paginas/contenido.html#historia">Historia</a></li>
+                            <li><a href="paginas/contenido.html#personajes">Personajes</a></li>
+                            <li><a href="paginas/contenido.html#armas">Armas</a></li>
+                            <li><a href="paginas/contenido.html#mas-contenido">Más contenido</a></li>
+                        </ul>
+                    </nav>
+                </section>
+            </div>
+            <!-- seccion contacto-->
+            <div class="footer-section footer-section-4">
+                <section>
+                    <h5>Contacto</h5>
+                    <p>521 Gough Street, <br>San Francisco,<br>California 94102 <br> (918) 258-5765</p>
+                </section>
+            </div>
+        </div>
+        <!-- div menu footer-->
+        <div class="footer-navigation">
+            <div class="menu" id="menu-footer">
+                <nav class="site-navigation">
+                    <div>
+                        <ul>
+                            <li><a id="menu-home" href="index.html">Inicio</a></li>
+                            <li><a href="paginas/supergiant-games.html">Supergiant Games</a></li>
+                            <li><a href="paginas/contenido.html">Contenido</a></li>
+                            <li><a href="paginas/bendiciones.html">Bendiciones</a></li>
+                            <li><a href="paginas/contacto.html">Contacto</a></li>   
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+            <div class="redes-sociales" id="redes-footer">
+                <div class="red-social">
+                    <a href="https://www.facebook.com/supergiantgames" target="_blank" >
+                        <img src="media/redes/facebook.webp" alt="Facebook">
+                    </a>
+                </div>
+                <div class="red-social">
+                    <a href="https://twitter.com/SupergiantGames" target="_blank" >
+                        <img src="media/redes/twitter.webp" alt="Twitter">
+                    </a>
+                </div>
+                <div class="red-social">
+                    <a href="https://www.instagram.com/supergiantgames/" target="_blank" >
+                        <img src="media/redes/instagram.webp" alt="Instagram">
+                    </a>
+                </div>
+                <div class="red-social">
+                    <a href="https://www.youtube.com/channel/UCmyMcU6N5_3XpqSkTx9CnSw" target="_blank" >
+                        <img src="media/redes/youtube.webp" alt="YouTube">
+                    </a>
+                </div>       
+            </div>
+        </div>
+        <div class="footer-copyright">
+            <p>Copyright &copy; 2024</p>
+            <p>Juan Pablo Montoya Jimenez - Tecnologías Web</p>
+        </div>
     </footer>
 </body>
 </html>
