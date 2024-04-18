@@ -154,11 +154,22 @@ p{
     margin-bottom: 2%;
 }
 
-#Logo-sup{
+#quienes-somos img{
+    transition: color 0.3s ease;
+    filter: grayscale(100%);
+}
+
+#quienes-somos img:hover{
+    filter: brightness(100%);
+}
+
+.text-img-content #Logo-sup{
     margin-top: 4%;
     margin-right: 0;
     width: 30%;
+    filter: none;
 }
+
 
 /* Configuracion imagen cortada */
 
@@ -187,7 +198,7 @@ p{
     position: relative;
     filter: grayscale(100%);
     width: 100%;
-    clip-path: polygon(0% 15%, 100% 0%, 100% 0%, 100% 80%, 0% 100%, 0% 100%);
+    clip-path: polygon(0% 10%, 100% 0%, 100% 0%, 100% 90%, 0% 100%, 0% 100%);
     object-fit: cover; 
     z-index: -1; 
 }
@@ -517,6 +528,7 @@ p{
     .center-img-cut  img {
         padding: 0;
         max-width: 100%;
+        clip-path: polygon(0% 30%, 100% 0%, 100% 0%, 100% 70%, 0% 100%, 0% 100%);
     }
 
     /* Configuracion de supergiant games */

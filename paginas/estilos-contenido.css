@@ -155,9 +155,100 @@ p{
     position: relative;
     filter: grayscale(100%);
     width: 100%;
-    clip-path: polygon(0% 15%, 100% 0%, 100% 0%, 100% 80%, 0% 100%, 0% 100%);
+    clip-path: polygon(0% 15%, 100% 0%, 100% 0%, 100% 90%, 0% 100%, 0% 100%);
     object-fit: cover; 
     z-index: -1; 
+}
+
+/* Configuracion contenido juego parte 1 */
+
+.content-img-container {
+    display: flex;
+    margin: 10% 5%;
+    justify-content: space-between;
+    gap: 2%; 
+}
+
+.game-content {
+    position: relative;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.game-content img {
+    max-width: 100%;
+    height: auto;
+    margin-top: auto;
+    filter: grayscale(100%);
+    margin-bottom: 5%;
+}
+
+
+.game-content h3 {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 36px;
+    z-index: 1; 
+}
+
+.personajes h3 {
+    top: 35%;
+}
+
+.border-button{
+    padding: 8px 30px; 
+    border: 2px solid  #04dd5b;
+    font-size: 18px;
+    color:  #04dd5b ;
+    transition: background-color 0.3s ease;
+    background-color: transparent; 
+}
+
+.border-button:hover{
+    background-color: #04dd5b;
+}
+
+.personajes a{
+    margin-top: auto;
+}
+
+/* Configuracion contenido juego parte 2 */
+
+.content-img-container-2 {
+    display: flex;
+    justify-content: space-between;
+    gap: 5%; 
+    margin: 0 5%;
+    margin-bottom: 2%;
+}
+
+.game-content-2 {
+    max-width: 40%;
+}
+
+.game-content-2 .img-content{
+    display: flex;
+    gap: 5%;
+    margin-bottom: 2%;
+}
+
+.game-content-2 img {
+    max-width: 50%;
+    height: auto;
+}
+
+.game-content-2 h3 {
+    font-size: 24px;
+}
+
+i {
+    margin-right: 3.5%; 
+    color: white;
 }
 
 /* Configuracion email */
@@ -173,7 +264,7 @@ p{
 }
 
 .img-with-div img {
-    width: 60%;
+    max-width: 60%;
 }
 
 .content-img-div {
@@ -181,14 +272,6 @@ p{
     top: 25%;
     transform: translateX(-50%);
     padding: 2% 4%;
-}
-
-.contact-email .buy-button{
-    padding: 8px 30px; 
-    border: 2px solid  #04dd5b;
-    font-size: 18px;
-    color:  #04dd5b ;
-    transition: background-color 0.3s ease;
 }
 
 .contact-email .content-img-div{
@@ -203,12 +286,7 @@ p{
     margin-right: 1%;
 }
 
-.contact-email .buy-button{
-    background-color: transparent; 
-}
-
-.contact-email .buy-button:hover{
-    background-color: #04dd5b;
+.contact-email .border-button:hover{
     color: black;
 }
 
@@ -384,7 +462,45 @@ p{
     .center-img-cut  img {
         padding: 0;
         max-width: 100%;
+        clip-path: polygon(0% 30%, 100% 0%, 100% 0%, 100% 70%, 0% 100%, 0% 100%);
     }
+
+    /* Configuracion contenido juego parte 1 */
+
+    .content-img-container {
+        flex-direction: column;
+        gap: 0;
+    }
+
+    .content-img-container a{
+        margin-top: -15.5%;
+        margin-bottom: 7.5%;
+        z-index: 1;
+    }
+
+    /* Configuracion contenido juego parte 1 */
+
+    .content-img-container-2 {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .game-content-2{
+        max-width: 100%;
+        margin: 0 5%;
+        margin-bottom: 7.5%;
+    }
+
+    .game-content-2 img{
+        margin: 0 auto;
+    }
+
+    .game-content-2 .img-content{
+        flex-direction: column;
+    }
+
+    /* Configuracion email */
 
     .contact-email .content-img-div{
         top: 100%;
@@ -394,7 +510,7 @@ p{
     }
 
     .contact-email img{
-        width: 100%;
+        max-width: 100%;
     }
 
     .contact-email .content-img-div p {
@@ -406,7 +522,7 @@ p{
         margin-bottom: 5%;
     }
 
-    .contact-email .buy-button{
+    .contact-email .border-button{
         width: 97.5%;
         margin-left: 0%; 
     }

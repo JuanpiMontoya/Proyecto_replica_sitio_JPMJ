@@ -223,7 +223,7 @@ textarea::placeholder {
     padding-top: 4%; 
 }
 
-#form-contact .buy-button{
+#form-contact .border-button{
     display: inline-block;
     padding: 2% 8%; 
     border: 2px solid  #04dd5b;
@@ -235,7 +235,7 @@ textarea::placeholder {
     background-color: transparent; 
 }
 
-#form-contact .buy-button:hover{
+#form-contact .border-button:hover{
     background-color: #04dd5b;
     color: black;
 }
